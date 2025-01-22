@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.13"
 pandas = "^2.2.3"
 pytest = "^8.3.4"
+isort = "^5.13.2"
+blue = "^0.9.1"
 
 
 [build-system]

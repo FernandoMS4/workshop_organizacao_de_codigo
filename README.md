@@ -33,6 +33,11 @@ Imputando o arquivo no github
  - git push -u origin main
 
 ```
+# Plugins
+
+```
+ - materials icon
+```
 
 # Testes unitarios
 
@@ -40,6 +45,43 @@ Primeiramente, o teste unitário é um teste feito basicamente para validar e ce
 
 A biblioteca utilizada vai ser o **pytest**, utilizando o padrão de testes [Automation Panda](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
 
+O teste unitário é feito literalmente testando e forçando erros no código ex: validando se um dataframe do pandas é do tipo pd.DataFrame:
+
+def test_minha_funcao():
+   df = pd.DataFrame
+   dataframe = meudf
+   assert df == meudf
+
 ```
+para rodar o teste:
+ - pytest -v
+```
+
+# Bibliotecas auxiliares
+
+Existem PEP's que seguem "regras" para que o código fique pythonico... 
+
+Destas bibliotecas:
+
+```
+   Para seguir a PEP8
+ - black .
+ - blue .
+ - isort .
+
+   Uma opção de variação do blue ou black é o flake8 mas vai de gosto, o flake pega toda a pep8 e analisa o código
+
+obs: é importante o "gerogero" no pyproject para que um não sobrescreva o outro quando se tem blue ou black e isort por exemplo
+
+[tool.isort]
+profile = "black"
+known_third_party = []
+
+   O taskipy é uma ferramenta poderosa que "automatiza" a ordem e necessidades do código
+ - taskipy
+
+no pyproject
+[tool.taskipy.tasks]
+format = "isort . && black ."
 
 ```
