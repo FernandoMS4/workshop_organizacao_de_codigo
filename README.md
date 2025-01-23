@@ -83,5 +83,15 @@ known_third_party = []
 no pyproject
 [tool.taskipy.tasks]
 format = "isort . && black ."
+run ""
+
+Para rodar> - task format
+
+Este comando roda oque foi colocado no pyproject
 
 ```
+
+# CI/CD
+
+Basicamente é um "pre-merge" se é que posso dizer assim... para que possamos validar se o código está rodando e validado com base em critérios postos no yaml
+[Documentação](https://docs.github.com/pt/actions/writing-workflows/quickstart)
