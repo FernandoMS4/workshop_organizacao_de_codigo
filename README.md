@@ -4,9 +4,37 @@ Olá mundo! 😉
 Prazer meu nome é Fernando, sou "minêro" e estou aprendendo python para me tornar um engenheiro de dados!
 ```
 
+
 # Inicio do projeto do workshop de Estruturação de projeto
 
+## Utilização do [Pyenv](https://github.com/pyenv/pyenv)
+
+```
+Para ver as versões do python instaladas: 
+
+pyenv versions
+
+Para Instalar uma nova versão:
+
+pyenv install 3.11.5
+```
+
+## Ambiente venv
+
+```
+Para controle do ambiente preciso criar o ambiente através do:
+python -m venv .venv
+
+Para ativar:
+linux: source .vent/bin/activate
+windows: souce .venv/Scripts/activate
+
+Para desativar:
+deactivate
+```
+
 Primeiramente inicio com o poetry para fazer o controle do meu ambiente
+
 
 ## Poetry
 
